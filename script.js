@@ -96,7 +96,6 @@ function appendPoint(){
 function operate(a, operator, b){
   a= Number(a);
   b= Number(b);
-  console.log([a,b]);
 
   switch(operator){
     case '+':
@@ -117,6 +116,25 @@ function operate(a, operator, b){
     default:
     return null;
   }
+}
+
+window.addEventListener('keydown', (e) => handelKeyboard(e));
+
+function handelKeyboard(e){
+  if(e.key >= 0 && e.key <= 9) displayNums(e.key);
+  if(e.key === '.')appendPoint();
+  if(e.key === '=')evaluate();
+  if(e.key === 'Backspace')deleteNum();
+  if(e.key === 'Escape')clear();
+  if(e.key === '+' || e.key === '-'|| e.key === '*'||e.key === '/')
+    equationSetup(convertOperator(e.key))
+}
+
+function convertOperator(keyboardOperator){
+  if(keyboardOperator === '+') return '+';
+  if(keyboardOperator === '-') return '-';
+  if(keyboardOperator === '*') return 'x';
+  if(keyboardOperator === '/') return '÷';
 }
 
 let disableSelect= (e)=> {return false};

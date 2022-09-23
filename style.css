@@ -6,17 +6,17 @@ body{
     overflow: hidden;
     font-size: 1.5em;
     font-weight: 500;
-    background-color: #fffdfb;
+    background-color: #faffe9;
     color: #4B3B47;
     margin: 0;
     padding: 0;
 }
 
 #calculator{
-    /*border-left: 5px solid rgb(235, 235, 235);
-    border-bottom: 5px solid rgb(235, 235, 235);
-    border-right: 5px solid rgb(238, 238, 238);*/
+    border-left: 10px solid rgb(211, 211, 211);
+    border-bottom: 10px solid rgb(211, 211, 211);
     border-right: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(247, 247, 247);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,6 @@ body{
     flex-wrap: wrap;
     min-width: 400px;
     padding: 15px;
-    box-shadow: -10px 15px #dddddd;
     background-color: #fcfcfc;
 }
 
@@ -32,9 +31,10 @@ body{
     border-left: 4px solid rgb(211, 211, 211);
     border-bottom: 3px solid rgb(211, 211, 211);
     border-right: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
     box-shadow: -5px 10px #B084CC;
-    height: 70px;
-    min-width: 400px;
+    height: 60px;
+    min-width: 350px;
     overflow-y: auto;
     padding: 10px;
     background-color: #fcfcfc;
@@ -42,8 +42,8 @@ body{
 
 #buttons {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(5, 70px);
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(5, 50px);
     justify-content: center;
     align-content: center;
     gap: 16px;
@@ -52,9 +52,10 @@ body{
 
 #buttons div{
     box-shadow: -5px 10px #B084CC;
-    border-bottom: 3px solid rgb(211, 211, 211);
-    border-left: 4px solid rgb(211, 211, 211);
+    border-bottom: 3px solid rgb(233, 233, 233);
+    border-left: 6px solid rgb(233, 233, 233);
     border-right: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
     padding: 10%;
     background-color: #fcfcfc;
     display: flex;
